@@ -5,14 +5,21 @@ class List extends Component {
         userList: []
     }
 
+    query;
+
     // fetching list from databse
     componentDidMount() {
-        const query = this.props.firebase.firestore.collection('users')
-        query.onSnapshot((snapshot) => {
-            this.setState({
-                userList: snapshot.docs
-            })
-        })
+        this.query = this.props.firebase.firestore.collection('users').get()
+        .then(data => this.setState({
+            userList: data.docs
+        }))
+    }
+
+    handleUpdate = () => {
+        this.query = this.props.firebase.firestore.collection('users').get()
+        .then(data => this.setState({
+            userList: data.docs
+        }))
     }
 
     // rendering list from database
@@ -21,10 +28,11 @@ class List extends Component {
         return (
             <div>
                 <h1>User list below</h1>
+                <button onClick={this.handleUpdate}>Update</button>
                     <ul>
                         {
                             this.state.userList.map(user => (
-                                <li>
+                                <li key={user.data().name}>
                                     { user.data().name }
                                 </li>
                             ))

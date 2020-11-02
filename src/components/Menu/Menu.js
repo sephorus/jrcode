@@ -31,18 +31,6 @@ class Menu extends Component {
         }))
     }
 
-    // onToggle = () => {
-    //     const toggleElement = document.getElementById("navbar-toggled");
-    //     const el = document.getElementById("navbar-toggle");
-    //     const display = toggleElement.style.display
-    //     if (display === "" || display === "none") {
-    //         toggleElement.style.display = "flex"
-    //         el.innerHTML = "close"
-    //     } else if (display === "flex") {
-    //         toggleElement.style.display = "none"
-    //         el.innerHTML = "menu"
-    //     }
-
     onToggle = () => {
 
         const toggledElement = document.getElementById("navbar-toggled")
@@ -63,14 +51,16 @@ class Menu extends Component {
             <nav id="navbar" className={!this.state.visible ? 'navbar-hidden': ""}>
                 <div class="nav-left">
                     <a href="#" class="logo">jrportfolio</a>
-                    {
-                        this.state.toggled && <i class="material-icons md-24" id="navbar-toggle" onClick={() => this.onToggle()}>close</i>
-                    }
-                    {
-                        !this.state.toggled && <i class="material-icons md-24" id="navbar-toggle" onClick={() => this.onToggle()}>menu</i>
-                    }
+                    <i class="material-icons md-24" id="navbar-toggle" onClick={() => this.onToggle()}>menu</i>
                 </div>
                 <div class="nav-right" id="navbar-toggled">
+                    {
+                        this.state.toggled && (
+                            <div className="close">
+                                <i class="material-icons md-24" id="navbar-toggle" onClick={() => this.onToggle()}>close</i>
+                            </div>
+                        )
+                    }
                     <a href="#">Home</a>
                     <a href="#about">About</a>
                     <a href="#experience">Experience</a>

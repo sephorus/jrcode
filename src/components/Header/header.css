@@ -1,0 +1,46 @@
+.header {
+    max-width: 100vw;
+    height: 100vh;
+    background-image: url("../../imgs/main.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--on-primary);
+    position: relative;
+    z-index: 0;
+}
+
+@keyframes blink-caret {
+    from, to {border-color: transparent}
+    50% {border-color: #66b2b2;}
+}
+
+.background-tint {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+
+.media-bar {
+    display: flex;
+    display: -webkit-display;
+    margin-top: 15px;
+}
+
+.media-bar a, .media-bar button i {
+    text-decoration: none;
+}
+
+.button-padding {
+    padding: 12px 20px;
+    margin-right: 8px;
+}

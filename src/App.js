@@ -10,6 +10,7 @@ function App() {
   return (
     <div>
       <Menu />
+      <Header />
     </div>
       // <FirebaseContext.Consumer>
       //   {firebase => (

@@ -1,4 +1,7 @@
 .button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     border-radius: 4px;
     font-size: 1.1rem;
     font-weight: 500;
@@ -14,51 +17,65 @@
     align-items: center;
     height: 40px;
     min-width: 90px;
+
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
 }
 
 .button:hover {
+    cursor: hand;
     cursor: pointer;
     outline: none;
 }
 
 .button-contained {
     background-color: var(--primary);
+    background: var(--primary);
     color: white;
 }
 
 .button-contained:hover {
     background-color: var(--primary-tint);
+    background: var(--primary-tint);
     box-shadow: 1px 0.5px 0px var(--primary-tint);
 }
 
 .button-contained:active {
+    background: var(--primary-tint2);
     background-color: var(--primary-tint2);
 }
 
 .button-outlined {
     border: 1px solid var(--primary);
+    background: transparent;
     background-color: transparent;
     color: var(--primary);
 }
 
 .button-outlined:hover {
+    background: #f1f1f1;
     background-color: #f1f1f1;
 }
 
 .button-outlined:active {
+    background: var(--primary-tint3);
     background-color: var(--primary-tint3);
 }
 
 .button-text {
     color: var(--primary);
     background-color: transparent;
+    background: transparent;
 }
 
 .button-text:hover {
+    background: #f1f1f1;
     background-color: #f1f1f1;
 }
 
 .button-text:active {
+    background: var(--primary-tint3);
     background-color: var(--primary-tint3);
 }
 

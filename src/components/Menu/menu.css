@@ -1,0 +1,92 @@
+nav {
+    display: flex;
+    background-color: var(--primary-variant);
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    transition: 0.3s ease;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-right{
+    margin-left: auto;
+}
+
+.nav-left i {
+    display: none;
+    margin-left: auto;
+}
+
+.nav-left a, .nav-right a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--on-primary);
+    padding: 12px 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.navbar-hidden {
+    top: -68px;
+}
+
+.logo {
+    margin-right: auto;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav a:hover {
+    background-color: var(--primary);
+}
+
+nav a:active {
+    background-color: var(--primary-tint);
+}
+
+@media only screen and (max-width: 1000px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-left {
+        padding: 12px 3px;
+    }
+
+    .nav-left i {
+        display: block;
+        color: var(--on-primary);
+    }
+
+    .nav-left a {
+        padding: 0px;
+    }
+
+    .nav-right {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        margin: 0;
+        height: calc(100vh - 68px);
+        z-index: 1;
+    }
+
+    .nav-left i:hover {
+        cursor: pointer;
+    }
+
+    .nav-right a {
+        margin: 5px 0px;
+    }
+
+}

@@ -1,3 +1,39 @@
+@import "./css/button.css";
+@import "./css/type.css";
+@import "./css/card.css";
+
+/* Component stylesheet imports*/
+@import "./components/Header/header.css";
+@import "./components/Menu/menu.css";
+
+:root {
+  --primary: #0E75EB;
+  --primary-variant: #1943b9;
+  --secondary: #eb840e;
+  --secondary-variant: #de660b;
+  --background: #FFFFFF;
+  --surface: #FFFFFF;
+  --error: #B00020;
+  --on-primary: #FFFFFF;
+  --on-secondary: #000000;
+  --on-background: #000000;
+  --on-surface: #000000;
+  --on-error: #FFFFFF;
+  --primary-tint: #0097ff;
+  --primary-tint2: #5ab7ff;
+  --primary-tint3: #badfff;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +41,4 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }

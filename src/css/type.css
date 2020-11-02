@@ -1,0 +1,80 @@
+.headline1 {
+    font-weight: lighter;
+    font-size: 96px;
+    letter-spacing: -1.5px;
+}
+
+.headline2 {
+    font-weight: lighter;
+    font-size: 60px;
+    letter-spacing: -0.5px;
+}
+
+.headline3 {
+    font-weight: normal;
+    font-size: 48px;
+    letter-spacing: 0px;
+}
+
+.headline4 {
+    font-weight: normal;
+    font-size: 34px;
+    letter-spacing: 0.25px;
+}
+
+.headline5 {
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: 0px;
+}
+
+.headline6 {
+    font-weight: medium;
+    font-size: 20px;
+    letter-spacing: 0.15px;
+}
+
+.subtitle1 {
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.15px;
+}
+
+.subtitle2 {
+    font-weight: bolder;
+    font-size: 14px;
+    letter-spacing: 0.1px;
+}
+
+.body1 {
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.body2 {
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+}
+
+.caption {
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+}
+
+.overline {
+    font-weight: normal;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+
+.date {
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+.desc {
+    line-height: 15px;
+}

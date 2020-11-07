@@ -1,11 +1,14 @@
-@import "./css/button.css";
 @import "./css/type.css";
-@import "./css/card.css";
 
 /* Component stylesheet imports*/
 @import "./components/Header/header.css";
 @import "./components/Menu/menu.css";
-@import "./components/About/about.css";
+@import "./components/Experience/experience.css";
+@import "./components/Footer/footer.css";
+@import "./components/Title/title.css";
+@import "./components/Card/card.css";
+@import "./components/Button/button.css";
+@import "./components/Experience/experience.css";
 
 :root {
   --primary: #485abf;

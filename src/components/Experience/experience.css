@@ -1,0 +1,22 @@
+.about {
+    background: var(--background);
+    color: var(--primary);
+    display: flex;
+    justify-content: start;
+    -webkit-justify-content: start;
+    align-items: center;
+    -webkit-align-items: center;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 40px 20px;
+}
+
+.about-inner {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+}

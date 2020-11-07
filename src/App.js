@@ -5,14 +5,15 @@ import { FirebaseContext } from './components/Firebase';
 /* Component imports */
 import Header from './components/Header/Header';
 import Menu from './components/Menu/Menu';
-import About from './components/About/About';
+import Experience from './components/Experience/Experience';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <div>
       <Menu />
       <Header />
-      <About />
+      <Experience />
     </div>
       // <FirebaseContext.Consumer>
       //   {firebase => (

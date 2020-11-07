@@ -69,6 +69,6 @@
 .about-title-shadow {
     position: relative;
     top: 40px;
-    opacity: 30%;
+    opacity: 0.3;
     font-size: 30px;
 }

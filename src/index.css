@@ -9,6 +9,7 @@
 @import "./components/Card/card.css";
 @import "./components/Button/button.css";
 @import "./components/Experience/experience.css";
+@import "./components/About/about.css";
 
 :root {
   --primary: #485abf;

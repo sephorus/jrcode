@@ -6,14 +6,21 @@ import { FirebaseContext } from './components/Firebase';
 import Header from './components/Header/Header';
 import Menu from './components/Menu/Menu';
 import Experience from './components/Experience/Experience';
+import About from './components/About/About';
 import Footer from './components/Footer/Footer';
+import Projects from './components/Projects/Projects'
+import Contact from './components/Contact/Contact';
 
 function App() {
   return (
     <div>
       <Menu />
       <Header />
-      <Experience />
+      <About background="purple"/>
+      <Experience background="white"/>
+      <Projects background="purple" />
+      <Contact background="white" />
+      <Footer />
     </div>
       // <FirebaseContext.Consumer>
       //   {firebase => (

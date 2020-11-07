@@ -2,9 +2,10 @@ import React from 'react';
 import Title from '../Title/Title';
 import Card from '../Card/Card';
 
-function Experience() {
+function Experience(props) {
     const title = "Experience"
     const subtitle = "Where I've been coding"
+    const { background } = props;
 
     const cardInfo = {
         title: 'Web Designer',
@@ -18,7 +19,7 @@ function Experience() {
     }
 
     return (
-        <div class="about">
+        <div className={`about ${background === 'purple' ? 'about-bg-secondary' : 'about-bg-main'}`}>
             <Title title={title} subtitle={subtitle}/>
             <div class="about-inner">
 

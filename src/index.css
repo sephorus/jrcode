@@ -5,12 +5,11 @@
 /* Component stylesheet imports*/
 @import "./components/Header/header.css";
 @import "./components/Menu/menu.css";
+@import "./components/About/about.css";
 
 :root {
-  --primary: #0E75EB;
-  --primary-variant: #1943b9;
-  --secondary: #eb840e;
-  --secondary-variant: #de660b;
+  --primary: #485abf;
+  --primary-variant: #354498;
   --background: #FFFFFF;
   --surface: #FFFFFF;
   --error: #B00020;
@@ -19,9 +18,9 @@
   --on-background: #000000;
   --on-surface: #000000;
   --on-error: #FFFFFF;
-  --primary-tint: #0097ff;
-  --primary-tint2: #5ab7ff;
-  --primary-tint3: #badfff;
+  --primary-tint: #6575ca;
+  --primary-tint2: #828fd4;
+  --primary-tint3: #aeb6e3;
 }
 
 *, *::after, *::before {
@@ -32,6 +31,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {

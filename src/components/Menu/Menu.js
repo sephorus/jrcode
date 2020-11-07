@@ -48,7 +48,7 @@ class Menu extends Component {
 
     render() {
         return (
-            <nav id="navbar" className={!this.state.visible ? 'navbar-hidden': ""}>
+            <nav id="navbar">
                 <div class="nav-left">
                     <a href="#" class="logo">jrportfolio</a>
                     <i class="material-icons md-24" id="navbar-toggle" onClick={() => this.onToggle()}>menu</i>

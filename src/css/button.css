@@ -29,6 +29,20 @@
     outline: none;
 }
 
+.button-white {
+    background: white;
+    color: var(--primary);
+}
+
+.button-white:hover {
+    background: lightgray;
+}
+
+.button-white:active {
+    background: var(--primary-variant);
+    color: white;
+}
+
 .button-contained {
     background-color: var(--primary);
     background: var(--primary);

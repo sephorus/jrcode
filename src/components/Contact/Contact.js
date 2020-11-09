@@ -7,7 +7,7 @@ function Contact(props) {
     const { background } = props;
 
     return (
-        <div className={`about ${background === 'purple' ? 'about-bg-secondary' : 'about-bg-main'}`}>
+        <div id="contact"  className={`about ${background === 'purple' ? 'about-bg-secondary' : 'about-bg-main'}`}>
             <Title title={title} subtitle={subtitle}/>
             <div class="about-inner">
 

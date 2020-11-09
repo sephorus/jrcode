@@ -10,10 +10,13 @@
 @import "./components/Button/button.css";
 @import "./components/Experience/experience.css";
 @import "./components/About/about.css";
+@import "./components/Current/current.css";
 
 :root {
   --primary: #485abf;
   --primary-variant: #354498;
+  --primary-variant2: #252f6a;
+  --primary-variant3: #151b3c;
   --background: #FFFFFF;
   --surface: #FFFFFF;
   --error: #B00020;

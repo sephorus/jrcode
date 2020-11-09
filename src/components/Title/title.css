@@ -17,6 +17,12 @@
     font-size: 30px;
 }
 
+@media only screen and (max-width: 1000px) {
+    .shadow-title {
+        top: 25px;
+    }
+}
+
 @media only screen and (max-width: 400px) {
     .shadow-title {
         font-size: 21px;

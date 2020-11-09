@@ -5,7 +5,7 @@ function Header() {
         <header>
             <div class="header background-tint">
                 <h1 class="headline1">Joel Ramos</h1>
-                <p class="headline6">Aspiring Full-Stack Developer</p>
+                <p class="headline5">Aspiring Front-End Developer</p>
                 <div class="media-bar">
 
                     <a href="https://github.com/sephorus" target="_blank" class="button button-contained button-padding">

@@ -125,8 +125,11 @@ nav a:active {
     }
 
     .headline1{
-        font-size: 55px;
-        line-height: 100px;
+        font-size: 50px;
+    }
+
+    .headline5 {
+        font-size: 20px;
     }
 
     .about-inner2 {

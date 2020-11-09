@@ -1,0 +1,53 @@
+.profile-pic {
+    width: 100%;
+    max-width: 440px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.about-info {
+    max-width: 100%;
+}
+
+.card-buttons a {
+    text-decoration: none;
+}
+
+.about-info p {
+    margin: 15px 0px;
+}
+
+.about-section {
+    height: auto;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    display: inline-flex;
+    gap: 50px;
+}
+
+.about-info h2 {
+    margin-bottom: 12px;
+    opacity: 0.8;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .about-section {
+        flex-direction: column;
+        display: flex;
+        padding: 10px;
+    }
+
+    .about-info p {
+        margin: 18px 0px;
+    }
+
+    .profile-pic {
+        border-radius: 0px;
+        width: 100%;
+    }
+
+}

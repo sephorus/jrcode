@@ -10,6 +10,7 @@ import About from './components/About/About';
 import Footer from './components/Footer/Footer';
 import Projects from './components/Projects/Projects'
 import Contact from './components/Contact/Contact';
+import Current from './components/Current/Current';
 
 function App() {
   return (
@@ -17,9 +18,10 @@ function App() {
       <Menu />
       <Header />
       <About background="purple"/>
+      <Current />
       <Experience background="white"/>
       <Projects background="purple" />
-      <Contact background="white" />
+      <Contact background="white"/>
       <Footer />
     </div>
       // <FirebaseContext.Consumer>

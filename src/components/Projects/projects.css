@@ -1,0 +1,28 @@
+.projects {
+    max-width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    margin: 15px;
+}
+
+.project-item img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 700px) {
+    .project-item {
+        max-width: 100%;
+    }
+
+    .project-item img {
+        max-width: 100%;
+    }
+
+}

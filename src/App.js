@@ -1,6 +1,7 @@
 import './App.css';
 import List from './components/List/List';
 import { FirebaseContext } from './components/Firebase';
+import TextField from '@material-ui/core/TextField'
 
 /* Component imports */
 import Header from './components/Header/Header';

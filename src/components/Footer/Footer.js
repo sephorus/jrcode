@@ -2,7 +2,9 @@ import React from 'react'
 
 function Footer() {
     return (
-        <p>Footer section</p>
+        <footer>
+            <p>© 2020 Joel Ramos. All rights reserved.</p>
+        </footer>
     )
 }
 

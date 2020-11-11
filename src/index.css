@@ -11,6 +11,8 @@
 @import "./components/Experience/experience.css";
 @import "./components/About/about.css";
 @import "./components/Current/current.css";
+@import "./components/Contact/contact.css";
+@import "./components/Projects/projects.css";
 
 :root {
   --primary: #485abf;

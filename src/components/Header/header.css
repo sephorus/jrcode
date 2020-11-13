@@ -80,6 +80,12 @@
     background-repeat: no-repeat;
 }
 
+@media only screen and (max-width: 1200px) {
+    .header::before {
+        height: 250px;
+    }
+}
+
 @media only screen and (max-width: 700px) {
     .header {
         background-attachment: initial;
@@ -88,7 +94,13 @@
     }
 
     .header::before {
-        height: 100px;
+        height: 150px;
     }
 
+}
+
+@media only screen and (max-width: 400px) {
+    .header::before {
+        height: 100px;
+    }
 }

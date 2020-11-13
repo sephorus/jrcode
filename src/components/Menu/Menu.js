@@ -7,7 +7,9 @@ class Menu extends Component {
 
         this.state = {
             prevScrollpos: window.pageYOffset,
-            visible: true
+            visible: true,
+            backgroundColor: "transparent",
+            toggled: false
         }
     }
 
@@ -20,31 +22,33 @@ class Menu extends Component {
     }
 
     handleScroll = () => {
-        const width = window.screen.width;
-        if (width <= 1000) {
-            const { prevScrollpos } = this.state;
-            const currentScrollpos = window.pageYOffset;
-            const visible = prevScrollpos > currentScrollpos;
+        var height = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+        var width = window.screen.width;
+        
+        console.log(height)
 
-            this.setState(() => ({
-                prevScrollpos: currentScrollpos, 
-                visible
-            }))
+        if (window.screen.width < 1000 && height > 250) {
+            this.setState({
+                backgroundColor: "#354498"
+            })
         }
-    }
 
-    onClose = () => {
-        console.log(window.screen.width);
-        if (window.screen.width <= 1000) {
-            const el = document.getElementById('nav-right');
-            console.log(el);
-        } 
+        if (height > 600) {
+            this.setState({
+                backgroundColor: "#354498"
+            })
+        } else {
+            this.setState({
+                backgroundColor: "transparent"
+            })
+        }
+
     }
 
     onToggle = () => {
 
         if (window.screen.width <= 1000) {
-            const toggledElement = document.getElementById("navbar-toggled")
+            const toggledElement = document.getElementById("navbar").children[1];
         const display = toggledElement.style.display
         if (display === "" || display === "none") {
             toggledElement.style.display = "flex"
@@ -61,12 +65,12 @@ class Menu extends Component {
 
     render() {
         return (
-            <nav id="navbar">
+            <div id="navbar" class="show" style={{backgroundColor: this.state.backgroundColor}}>
                 <div class="nav-left">
                     <a href="#" class="logo">jrportfolio</a>
                     <i class="material-icons md-24" id="navbar-toggle" onClick={() => this.onToggle()}>menu</i>
                 </div>
-                <div id="nav-right" class="nav-right" id="navbar-toggled">
+                <div class="nav-right" id="navbar-toggled nav-right">
                     {
                         this.state.toggled && (
                             <div className="close">
@@ -79,7 +83,7 @@ class Menu extends Component {
                     <a href="#experience" onClick={() => this.onToggle()}>Experience</a>
                     <a href="#contact" onClick={() => this.onToggle()}>Contact</a>
                 </div>
-            </nav>
+            </div>
         )
     }
 

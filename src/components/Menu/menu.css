@@ -1,15 +1,21 @@
-nav {
+#navbar {
     display: -webkit-flex;
     display: flex;
-    background-color: var(--primary-variant);
-    background: var(--primary-variant);
+    /* background-color: var(--primary-variant);
+    background: var(--primary-variant); */
     width: 100%;
     margin: 0 auto;
-    padding: 10px 20px;
+    padding: 15px;
     top: 0;
     transition: 0.3s ease;
     z-index: 1;
     position: fixed;
+}
+
+@keyframes show {
+    100% {
+        opacity: 1;
+    }
 }
 
 .nav-left, .nav-right {
@@ -48,18 +54,19 @@ nav {
     letter-spacing: 2px;
 }
 
-nav a:hover {
-    background-color: var(--primary);
-    background: var(--primary);
+#navbar a:hover {
+    /* background-color: var(--primary);
+    background: var(--primary); */
+    color: lightgray;
 }
 
-nav a:active {
-    background-color: var(--primary-tint);
-    background: var(--primary-tint);
+#navbar a:active {
+    /* background-color: var(--primary-tint);
+    background: var(--primary-tint); */
 }
 
 @media only screen and (max-width: 1000px) {
-    nav {
+    #navbar {
         flex-direction: column;
         -webkit-flex-direction: column;
     }
@@ -89,8 +96,8 @@ nav a:active {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        display: none;
 
+        display: none;
         position: fixed;
         z-index: 2;
         top: 0;

@@ -45,9 +45,73 @@ html {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Montserrat', 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.svg g path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: -725;
+  animation: draw 6s forwards;
+  fill: none;
+}
+
+.svg {
+  fill: none;
+  stroke: white;
+  stroke-width: 5;
+}
+
+@keyframes draw {
+  20% {
+    stroke-dashoffset: 0;
+    fill: none;
+  }
+  100% {
+    fill: white;
+  }
+  
+}
+
+#J {
+  animation-delay: 0s;
+}
+
+#o {
+  animation-delay: 0.1s;
+}
+
+#e {
+  animation-delay: 0.2s;
+}
+
+#l {
+  animation-delay: 0.3s;
+}
+
+#R {
+  animation-delay: 0.4s;
+}
+
+#a {
+  animation-delay: 0.5s;
+}
+
+#m {
+  animation-delay: 0.6s
+}
+
+#o_2 {
+  animation-delay: 0.7s;
+}
+
+#S {
+  animation-delay: 0.8s;
+}
+
+@media only screen and (max-width: 700px) {
+  .svg {
+    transform: scale(0.50);
+  }
 }

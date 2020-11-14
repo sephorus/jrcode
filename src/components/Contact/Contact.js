@@ -11,7 +11,7 @@ function Contact(props) {
         <div>
             <div id="contact"  className={`about ${background === 'purple' ? 'about-bg-secondary' : 'about-bg-main'}`}>
                 <Title title={title} subtitle={subtitle}/>
-                <div className="contact-section">
+                <div className="contact-section module">
                     <div className="contact-item">
                         <span class="material-icons">map</span>
                         <h1 className="headline6">Location</h1>

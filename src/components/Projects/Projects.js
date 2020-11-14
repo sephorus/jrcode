@@ -12,7 +12,7 @@ function Projects(props) {
     return (
         <div className={`about ${background === 'purple' ? 'about-bg-secondary' : 'about-bg-main'}`}>
             <Title title={title} subtitle={subtitle}/>
-            <div class="projects">
+            <div class="projects module">
                 <div class="project-item">
                     <img src={img} />
                     <h1 className="headlin6">Ramos Code</h1>

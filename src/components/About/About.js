@@ -10,10 +10,10 @@ function About(props) {
 
     return (
         <div id="about" className={`about ${background === 'purple' ? 'about-bg-secondary' : 'about-bg-main'}`}>
-            <Title title={title} subtitle={subtitle} />
+            <Title title={title} subtitle={subtitle} className="module" />
             <div className="about-section">
-                  <img src={img} className="profile-pic"/>
-                  <div class="about-info">
+                  <img src={img} className="profile-pic module"/>
+                  <div class="about-info module">
                       <h1 className="headline3">Joel Ramos</h1>
                       <h2 className="headline5">Aspiring Front-End Engineer</h2>
                       <p className="body1">

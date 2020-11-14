@@ -43,7 +43,7 @@ function Experience(props) {
     return (
         <div id="experience" className={`about ${background === 'purple' ? 'about-bg-secondary' : 'about-bg-main'}`}>
             <Title title={title} subtitle={subtitle}/>
-            <div class="about-inner">
+            <div class="about-inner module">
 
                 <Card 
                     title={cardInfo.title} 

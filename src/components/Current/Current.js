@@ -2,7 +2,7 @@ import React from 'react';
 
 function Current() {
     return (
-        <div className="skills">
+        <div className="skills module">
             <div className="skill">
             <div class="title-icon">
                     <h1 className="headline6">What I'm Learning</h1>

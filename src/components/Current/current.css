@@ -8,7 +8,7 @@
     align-items: center;
     position: relative;
     background-color: var(--primary-variant2);
-    padding: 15px 0px;
+    padding: 20px 0px;
     gap: 30px;
 }
 
@@ -16,12 +16,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     width: 300px;
     max-width: 300px;
-    height: auto;
+    height: 100%;
     color: var(--on-primary);
     flex-direction: column;
+    border-radius: 4px;
+    transition: 0.25s;
 }
 
 .title-icon {
@@ -33,6 +35,11 @@
     position: relative;
     top: 2px;
     left: 6px;
+    transition: 0.6s;
+}
+
+.skill:hover > .title-icon > span {
+    transform: rotate(360deg);
 }
 
 .skill > * {

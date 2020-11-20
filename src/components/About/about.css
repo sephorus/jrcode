@@ -20,6 +20,7 @@
 
 .about-info p {
     margin: 15px 0px;
+    line-height: 25px;
 }
 
 .about-section {
@@ -31,13 +32,65 @@
     display: inline-flex;
 }
 
+.hello-world {
+    position: relative;
+    height: auto;
+    width: 350px;
+    background-color: var(--primary);
+    padding: 10px;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 20px;
+    opacity: 0;
+    z-index: 2;
+    transition: 0.4s;
+    animation-name: wiggle;
+    animation-duration: 1.25s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    top: 300px;
+    left: -440px;
+}
+
+@keyframes wiggle {
+    0% {transform: rotate(1deg);}
+    50% {transform: rotate(-1deg);}
+    100%{transform: rotate(1deg);}
+}
+
+.about-section:hover .hello-world {
+    opacity: 1;
+}
+
+.blue {
+    color: lightblue;
+}
+
+.green {
+    color: lightgreen;
+}
+
+.about-info:hover .hello-world {
+    opacity: 1;
+}
+
 .about-info h2 {
     margin-bottom: 12px;
     opacity: 0.8;
 }
 
-
 @media only screen and (max-width: 1000px) {
+
+    .hello-world {
+        opacity: 1;
+        width: 250px;
+        top: -100px;
+        left: 0;
+        margin: 0 auto 15px auto;
+        font-size: 16px;
+    }
+
     .about-section {
         flex-direction: column;
         gap: 0px;
@@ -48,10 +101,10 @@
     }
 
     .profile-pic {
-        border-radius: 0px;
         width: 100%;
         margin-right: 0px;
         margin-bottom: 30px;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
     }
 
     .about-inner div{

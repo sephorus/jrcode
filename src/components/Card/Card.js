@@ -3,7 +3,7 @@ import React from 'react';
 function Card(props) {
     const { title, subtitle, caption, desc, buttons } = props;
     return (
-        <div class="card">
+        <div class="card module">
             <div class="card-inner">
                 <h2 class="headline4">{ title }</h2>
                 <h2 class="subtitle1">{ subtitle }</h2>

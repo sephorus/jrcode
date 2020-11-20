@@ -49,6 +49,7 @@ class Menu extends Component {
 
         if (window.screen.width <= 1000) {
             const toggledElement = document.getElementById("navbar").children[1];
+            console.log(toggledElement);
         const display = toggledElement.style.display
         if (display === "" || display === "none") {
             toggledElement.style.display = "flex"

@@ -53,6 +53,12 @@
     flex-wrap: wrap;
 }
 
+.card:hover {
+    position: relative;
+    bottom: 2px;
+    right: 2px;
+}
+
 @media only screen and (max-width: 700px) {
     .card-buttons {
         display: flex;

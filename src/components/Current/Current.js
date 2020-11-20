@@ -2,8 +2,8 @@ import React from 'react';
 
 function Current() {
     return (
-        <div className="skills module">
-            <div className="skill">
+        <div className="skills">
+            <div className="skill module">
             <div class="title-icon">
                     <h1 className="headline6">What I'm Learning</h1>
                     <span class="material-icons">school</span>
@@ -12,7 +12,7 @@ function Current() {
                 <p className="body1">React</p>
                 <p className="body1">UX Design</p>
             </div>
-            <div className="skill">
+            <div className="skill module">
             <div class="title-icon">
                     <h1 className="headline6">What I'm Reading</h1>
                     <span class="material-icons">book</span>
@@ -21,7 +21,7 @@ function Current() {
                 <p className="body1">React Documentation</p>
                 <p className="body1">Eragon Series</p>
             </div>
-            <div className="skill">
+            <div className="skill module">
             <div class="title-icon">
                     <h1 className="headline6">What I'm Playing</h1>
                     <span class="material-icons">videogame_asset</span>
@@ -30,7 +30,7 @@ function Current() {
                 <p className="body1">Apex Legends</p>
                 <p className="body1">Super Smash Bros</p>
             </div>
-            <div className="skill">
+            <div className="skill module">
                 <div class="title-icon">
                     <h1 className="headline6">What I'm Watching</h1>
                     <span class="material-icons">tv</span>
